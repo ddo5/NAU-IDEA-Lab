@@ -80,7 +80,6 @@ figure{
     font-size: 500%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px black;
-
 }
 
 .carousel-caption h3
@@ -95,7 +94,7 @@ figure{
 {
     padding: .5rem;
     border-radius: 0;
-    background-color: rgb(241, 241, 241);
+    
     
 }
 
@@ -122,6 +121,7 @@ figure{
 
 #saftey{
     padding-top: 5rem;
+    background-color: rgb(241, 241, 241);
 }
 
 
@@ -146,6 +146,11 @@ figure{
     margin: 1rem;
 }
 
+#staff{
+    background-color: rgb(241, 241, 241);
+}
+
+
 .staffSection img
 {
     width: 250px;
@@ -159,6 +164,32 @@ footer{
     color: #d5d5d5;
     padding-top: 2rem;
 }
+
+/***********************************************************/
+
+/*--Gallery--*/
+.gallery{
+   background-color: #c5c0c0; 
+   padding-top: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.gallery img{
+    background-color: white;
+    padding: 15px;;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+    width: 100%;
+
+}
+
 
 
 /***********************************************************/
