@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
+        <title>NAU Engineering IDEA Lab</title>
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <!--Navigation Section-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a
+                    href='#'
+                    class="navbar-brand">
+                    <img
+                    src="./images/iconfinder_185589_gold_axe_icon_128px.png"
+                    width="30" height="30"
+                    alt="brand logo"/>
+                    IDEA Lab
+                </a>
+
+                <button 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarResponsive" 
+                    class="navbar-toggler"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <li class="nav-item">
+                            <a href="#announcements" class="nav-link">
+                                Announcements
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#saftey" class="nav-link">
+                                Safety
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#workOrder" class="nav-link">
+                                Work Order
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#staff" class="nav-link">
+                                Staff
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="gallery.html" class="nav-link">
+                                Gallery
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Image Slider Section-->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-bs-target="#slides" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#slides" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slides" data-bs-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/NAU Engineering Building.jpg" alt="slider image 1">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">NAU</h1>
+                        <h3>Engineering IDEA Lab</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/laser-cutting.jpg" alt="slider image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/themachine.jpg" alt="slider image 3">
+                </div>
+            </div>
+            <a href="#slides" class="carousel-control-prev" role="button" data-bs-slide-to="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="#slides" class="carousel-control-next" role="button" data-bs-slide-to="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+        <!--Introduction Section(Under Images)-->
+        <div class="container-fluid">
+            <div class="row introduction">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p class="lead text-center">Welcome to the IDEA Lab at Northern Arizona University. We offer 3D Printing,
+                        Laster Cutting and CNC operations for students and faculty. Detailed specifcations and features are
+                        listed below in addition to saftey orientation and work order submission.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Announcement Section-->
+        <div id= "announcements" data-spy="scroll" data-target="#navbarResponsive" data-offset="50" class="container-fluid padding">
+            <div class="row announcements text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Announcements</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Here is some sample text to be changed later for future updates</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Safety Section-->
+        <div id= "saftey" data-spy="scroll" data-target="#navbarResponsive" data-offset="50" class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h1 class="display-4">Safety First</h1>
+                    <hr>
+                </div>
+                <div class="col-12">
+                    <p class="lead">The IDEA Lab strives to maintain a safe work enviorment while operating 
+                        University equipment. Please take some time to review training resources and 
+                        accident prevention documentation.</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Saftey Training</h3>
+                    <p>Learning how to operate Laser Cutters, CNC, and 3D Printing machines safely is crucial for all
+                        members inside the Engineering IDEA Lab. Click Here to begin Saftey Training Sign Up!
+                    </p>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-medkit"></i>
+                    <h3>Accident Prevention/Procedures</h3>
+                    <p>Learn More about accident procedures in case of emergency
+                    </p>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>Learn More Here</h3>
+                    <p>Placeholder text for future content
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+            <hr class="my-4">
+            </div>
+        </div>
+
+        <!--Work Order Submission Section-->
+        <div id= "workOrder" data-spy="scroll" data-target="#navbarResponsive" data-offset="0" class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h2>Begin a Work Order Submission</h2>
+                    <p>The IDEA Lab provides numerous services to adhear to your engineering project. By providing the 
+                        necessary credientals, we will work to produce your submission in a timely manner.
+                    </p>
+                    <ul>
+                        <li>
+                            Approved SolidWorks Part File (SLDPRT)
+                        </li>
+                        <li>
+                            Approved Solidworks Drawing (PDF)
+                        </li>
+                        <li>
+                            NAU Email
+                        </li>
+                    </ul>
+                    <p>
+                        Additionally, the following Google Form will ask some basic questions in regard to the project's orgin.
+                    </p>
+                    <br>
+                    <a href="https://forms.gle/5d8QpMzLxCNXuX9u6" class="btn btn-primary">Submit Work Order</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/desk.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!--Meet Staff Members Section-->
+        <div id= "staff" class="container-fluid padding">
+            <div class="row announcements text-center">
+                <div class="col-12">
+                    <h1 class="display-4">
+                        Meet the Staff
+                    </h1>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <!--Cards-->
+            <div class="container-fluid padding">
+                    <div class="row padding">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class= "card-img-top" src="./images/giaProfile.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Gia Neve</h4>
+                                    <p class="card-text">Hello my name is Gia Neve, a 
+                                        Junior studying Mechanical Engineering at NAU. Contact me with any 
+                                        questions about your engineering projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class= "card-img-top" src="">
+                                <div class="card-body">
+                                    <h4 class="card-title">TBD</h4>
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class= "card-img-top" src="">
+                                <div class="card-body">
+                                    <h4 class="card-title">TBD</h4>
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col=md-4">
+                        <img
+                        src="./images/iconfinder_185589_gold_axe_icon_128px.png"
+                        width="50" height="50"
+                        alt="brand logo"/>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h5>Hours of Operation</h5>
+                        <br>
+                        <p>Monday (8AM - 5PM)</p>
+                        <p>Tuesday (8AM - 5PM)</p>
+                        <p>Wednesday (8AM - 5PM)</p>
+                        <p>Thursday (8AM - 5PM)</p>
+                        <p>Friday (8AM - 5PM)</p>
+                        <p>Saturday (Closed)</p>
+                        <p>Sunday (Closed)</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <br>
+                        <p>College of Engineering, Informatics, and Applied Sciences - NAU</p>
+                        <p>2112 S Huffer Ln</p>
+                        <p>Flagstaff, AZ 86011</p>
+                        <p>928-523-5251</p>
+                    </div>
+
+                    <div class="col-md-4">
+                       
+                        <h5>NAU</h5>
+                        <br>
+                        <p>928-523-9011</p>
+                        <p>S. San Francisco Street</p>
+                        <p>Flagstaff, AZ 86011</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+        
+    
+
+
+        <!--Boostrap JS Tags-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    </body>
+</html>
