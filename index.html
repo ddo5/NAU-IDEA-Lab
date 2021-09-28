@@ -11,7 +11,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+        <!--Styles for AOS-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--Main stylings for CSS-->
         <link href="styles.css" rel="stylesheet">
         
     </head>
@@ -19,6 +21,14 @@
     <body>
 
         <!--Navigation Section-->
+        <!--
+            This is the Navigation Section. This has Bootstrap styling with animated effects using AOS. This navbar is 
+            responsive and will resize at 974 x 1099 pixels. Items within this section will redirect on the page, but
+            work order links redirect to seperate pages. This is the same for the gallery page. 
+
+            Work order links are currently using Google Forms for submissions, but will later switch to embedded server at a
+            later date.
+        -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" data-aos='zoom-in' data-aos-duration="2000" data-aos-once="true">
             <div class="container-fluid">
                 <a
@@ -56,9 +66,9 @@
                               Place Work Order
                             </a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Boss Laser</a></li>
+                                <li><a class="dropdown-item" href="#">Stepcraft CNC</a></li>
+                                <li><a class="dropdown-item" href="#">3D Printers</a></li>
                               </ul>
                         </li>
                         <li class="nav-item">
@@ -82,6 +92,11 @@
         </nav>
 
         <!--Image Slider Section-->
+        <!--
+            The welcome page images are used in a carousel notation in Bootstrap. Each have a data target to direct to the proceeding image when
+            the user clicks the left and right side indicators. This section also utilizes AOS for visual effects. Inside styles.css
+            houses Media Queries for resizing the headings. 
+        -->
         <div id="slides" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-bs-target="#slides" data-bs-slide-to="0" class="active"></li>
@@ -116,6 +131,11 @@
         </div>
 
         <!--Introduction Section(Under Images)-->
+        <!--
+            Standard styling with Bootstrap grid using AOS on load in. 
+
+            To Update: Locate the <p> tag with the class "lead text-center". After the '>' symbol, edit the text ending before </p> tag
+        -->
         <div class="container-fluid">
             <div class="row introduction" data-aos='zoom-in' data-aos-duration="2000" data-aos-once="true">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -128,6 +148,12 @@
         </div>
 
         <!--Announcement Section-->
+        <!--
+            Standard styling with Bootstrap grid using AOS on load in. 
+
+            To Update: Locate the <p> tag with the class "lead". After the '>' symbol, edit the text ending before </p> tag
+        -->
+
         <div id= "announcements" data-spy="scroll" data-target="#navbarResponsive" data-offset="50" class="container-fluid padding">
             <div class="row announcements text-center">
                 <div class="col-12">
@@ -141,6 +167,13 @@
         </div>
 
         <!--Safety Section-->
+        <!--
+            Standard styling with Bootstrap grid using AOS on load in. Sections are organized in a 3 column orientation. They will
+            resize with change in view window. Each section is seperated with a <div> tag. The heading for each is used with a <h3> tag.
+            
+
+            To Update: Locate the <p> tag. After the '>' symbol, edit the text ending before </p> tag
+        -->
         <div id= "saftey" data-spy="scroll" data-target="#navbarResponsive" data-offset="50" class="container-fluid padding">
             <div class="row text-center padding">
                 <div class="col-12">
@@ -183,42 +216,13 @@
 
         </div>
 
-        <!--Work Order Submission Section-->
-        <div id= "workOrder" data-spy="scroll" data-target="#navbarResponsive" data-offset="0" class="container-fluid padding"
-        data-aos='zoom-in' data-aos-duration="2000" data-aos-once="true">
-            <div class="row padding">
-                <div class="col-md-12 col-lg-6">
-                    <h2>Begin a Work Order Submission</h2>
-                    <p>The IDEA Lab provides numerous services to adhear to your engineering project. By providing the 
-                        necessary credientals, we will work to produce your submission in a timely manner.
-                    </p>
-                    <ul>
-                        <li>
-                            Approved SolidWorks Part File (SLDPRT)
-                        </li>
-                        <li>
-                            Approved Solidworks Drawing (PDF)
-                        </li>
-                        <li>
-                            NAU Email
-                        </li>
-                    </ul>
-                    <p>
-                        Additionally, the following Google Form will ask some basic questions in regard to the project's orgin.
-                    </p>
-                    <br>
-                    <a href="https://forms.gle/5d8QpMzLxCNXuX9u6" class="btn btn-primary">Submit Work Order</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="./images/desk.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-
         <!--Meet Staff Members Section-->
-        <div id= "staff" class="container-fluid padding" data-aos='zoom-in' data-aos-duration="2000" data-aos-once="true">
-            <div class="row announcements text-center">
+        <!--
+            Standard styling with Bootstrap grid using AOS on load in. 
+
+        -->
+        <div id= "staff" class="container-fluid padding bg-light" data-aos='zoom-in' data-aos-duration="2000" data-aos-once="true">
+            <div class="row members text-center">
                 <div class="col-12">
                     <h1 class="display-4">
                         Meet the Staff
@@ -227,10 +231,18 @@
                 
             </div>
         </div>
-        
 
         <!--Cards-->
-            <div class="container-fluid padding" id="staff" data-aos='flip-right' data-aos-duration="2000" data-aos-once="true">
+        <!--
+            Standard styling with Bootstrap grid using AOS on load in. This section uses multiple <div> elements to organize each staff
+            card.
+
+            To Update: 
+                To update member NAME element -> Locate <h4 class="card-title"> and change text before ending tag
+                
+                To update member BIO element -> Locate <p class="card-text"> and change text before ending tag
+        -->
+            <div class="container-fluid padding bg-light" id="staff" data-aos='flip-right' data-aos-duration="2000" data-aos-once="true">
                     <div class="row padding">
                         <div class="col-md-4">
                             <div class="card">
@@ -270,9 +282,13 @@
                 </div>
 
             
-            
-
         <!--Footer-->
+        <!--
+            Standard Bootstrap Footer layout used here. Organized in three column sections.
+
+            To Update: When updating footer content, Find corresponding row (in order from left to right) and edit the <p> tags
+
+        -->
         <footer>
             <div class="container-fluid padding">
                 <div class="row text-center">
@@ -319,10 +335,12 @@
 
 
 
-        <!--Boostrap JS Tags-->
+        <!--JQuery Scripts-->
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!--Boostrap JS Scripts-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <!--Scripts for AOS-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
