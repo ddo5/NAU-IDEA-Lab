@@ -125,26 +125,6 @@ figure{
 }
 
 
-.fa-exclamation-triangle
-{
-    color: yellow;
-}
-
-.fa-medkit
-{
-    color: red;
-}
-
-.fa-hard-hat
-{
-    color: orange;
-}
-
-.fa-exclamation-triangle,.fa-medkit,.fa-hard-hat
-{
-    font-size: 4em;
-    margin: 1rem;
-}
 
 
 #staff{
@@ -152,12 +132,7 @@ figure{
 }
 
 
-.staffSection img
-{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
+
 
 
 footer{
