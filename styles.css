@@ -41,26 +41,6 @@ html,body{
     height: 100%;
 }
 
-.carousel-caption{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-caption h1{
-    font-size: 500%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
-}
-
-.carousel-caption h3{
-    font-size: 200%;
-    font-weight: 500;
-    text-shadow: 1px 1px 10px #000;
-    padding-bottom: 1rem;
-}
-
-
 figure{
     position: relative;
     width: 100%;
@@ -77,7 +57,7 @@ figure{
 
 .carousel-caption h1
 {
-    font-size: 500%;
+    font-size: 800%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px black;
 }
@@ -94,8 +74,6 @@ figure{
 {
     padding: .5rem;
     border-radius: 0;
-    
-    
 }
 
 
@@ -108,7 +86,7 @@ figure{
 {
     width: 75%;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .announcements hr{
@@ -139,7 +117,9 @@ footer{
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
+
 }
+
 
 /***********************************************************/
 
